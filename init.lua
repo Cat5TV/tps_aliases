@@ -44,6 +44,7 @@ local alias = {
   {"technic:mv_centrifuge", diamond},
   {"technic:mv_centrifuge_active", diamond},
 -- replace pipeworks nodes
+	{"pipeworks:pipe_3_empty", "air"},
 	{"pipeworks:autocrafter", gold},
 	{"pipeworks:valve_on_empty", steel},
 	{"pipeworks:valve_off_empty", steel},

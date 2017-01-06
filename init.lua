@@ -1,9 +1,9 @@
 local gold = "default:goldblock"
+local steel = "default:steelblock"
 local diamond = "default:diamondblock"
 
 local alias = {
   {"path6alt:junglewood", "default:junglewood"},
-
 -- remove vines
   {"vines:side_middle", "air"},
   {"vines:side_end", "air"},
@@ -15,7 +15,6 @@ local alias = {
   {"vines:vine_end", "air"},
   {"vines:willow_middle", "air"},
   {"vines:willow_end", "air"},
-
 -- replace technic machines
   {"technic:lv_electric_furnace", gold},
   {"technic:lv_electric_furnace_active", gold},
@@ -44,6 +43,47 @@ local alias = {
   {"technic:cnc_active", gold},
   {"technic:mv_centrifuge", diamond},
   {"technic:mv_centrifuge_active", diamond},
+-- replace pipeworks nodes
+	{"pipeworks:autocrafter", gold},
+	{"pipeworks:valve_on_empty", steel},
+	{"pipeworks:valve_off_empty", steel},
+	{"pipeworks:valve_on_loaded", steel},
+	{"pipeworks:flow_sensor_empty", steel},
+	{"pipeworks:flow_sensor_loaded", steel},
+	{"pipeworks:spigot", gold},
+	{"pipeworks:spigot_pouring", gold},
+	{"pipeworks:entry_panel_empty", gold},
+	{"pipeworks:entry_panel_loaded", gold},
+	{"pipeworks:grating", gold},
+	{"pipeworks:pump_on", gold},
+	{"pipeworks:pump_off", gold},
+	{"pipeworks:fountainhead", gold},
+	{"pipeworks:fountainhead_pouring", gold},
+	{"pipeworks:steel_block_embedded_tube", gold},
+	{"pipeworks:steel_pane_embedded_tube", gold},
+	{"pipeworks:expansion_tank_0", steel},
+	{"pipeworks:expansion_tank_1", steel},
+	{"pipeworks:expansion_tank_2", steel},
+	{"pipeworks:expansion_tank_3", steel},
+	{"pipeworks:expansion_tank_4", steel},
+	{"pipeworks:expansion_tank_5", steel},
+	{"pipeworks:expansion_tank_6", steel},
+	{"pipeworks:expansion_tank_7", steel},
+	{"pipeworks:expansion_tank_8", steel},
+	{"pipeworks:expansion_tank_9", steel},
+	{"pipeworks:expansion_tank_10", steel},
+	{"pipeworks:storage_tank_0", steel},
+	{"pipeworks:storage_tank_1", steel},
+	{"pipeworks:storage_tank_2", steel},
+	{"pipeworks:storage_tank_3", steel},
+	{"pipeworks:storage_tank_4", steel},
+	{"pipeworks:storage_tank_5", steel},
+	{"pipeworks:storage_tank_6", steel},
+	{"pipeworks:storage_tank_7", steel},
+	{"pipeworks:storage_tank_8", steel},
+	{"pipeworks:storage_tank_9", steel},
+	{"pipeworks:storage_tank_10", steel},
+	{"pipeworks:trashcan", gold},
 }
 
 -- change row[1] into row[2] on map

@@ -15,7 +15,9 @@ local alias = {
   {"vines:vine_end", "air"},
   {"vines:willow_middle", "air"},
   {"vines:willow_end", "air"},
+
 -- replace technic machines
+--[[
   {"technic:lv_electric_furnace", gold},
   {"technic:lv_electric_furnace_active", gold},
   {"technic:mv_electric_furnace", diamond},
@@ -85,6 +87,7 @@ local alias = {
 	{"pipeworks:storage_tank_9", steel},
 	{"pipeworks:storage_tank_10", steel},
 	{"pipeworks:trashcan", gold},
+--]]
 }
 
 -- change row[1] into row[2] on map

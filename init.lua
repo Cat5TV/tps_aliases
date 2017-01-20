@@ -70,7 +70,7 @@ end
 
 -- Purge technic nodes (turn them to air) using the conf setting. Default is false.
 local tps_aliases_purge_technic = minetest.setting_getbool("tps_aliases_purge_technic") or false
-if minetest.get_modpath("notice") and mki_notice_enable == true then
+if tps_aliases_purge_technic == true then
 	local technic_alias = {
 	  {"technic:lv_electric_furnace", air},
 	  {"technic:lv_electric_furnace_active", air},

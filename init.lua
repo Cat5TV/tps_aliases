@@ -105,6 +105,7 @@ if tps_aliases_purge_technic == true then
 	  {"technic:lv_battery_box8", air},
 	  {"technic:lv_grinder", air},
 	  {"technic:mv_cable", air},
+	  {"technic:hv_cable", air},
 	  
 
 		

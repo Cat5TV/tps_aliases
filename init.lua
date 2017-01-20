@@ -1,6 +1,7 @@
 local gold = "default:goldblock"
 local steel = "default:steelblock"
 local diamond = "default:diamondblock"
+local air = "air"
 
 local alias = {
   {"path6alt:junglewood", "default:junglewood"},

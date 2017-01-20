@@ -16,35 +16,8 @@ local alias = {
   {"vines:willow_middle", "air"},
   {"vines:willow_end", "air"},
 
--- replace technic machines
 --[[
-  {"technic:lv_electric_furnace", gold},
-  {"technic:lv_electric_furnace_active", gold},
-  {"technic:mv_electric_furnace", diamond},
-  {"technic:mv_electric_furnace_active", diamond},
-  {"technic:coal_alloy_furnace", gold},
-  {"technic:coal_alloy_furnace_active", gold},
-  {"technic:alloy_furnace", gold},
-  {"technic:alloy_furnace_active", gold},
-  {"technic:mv_alloy_furnace", diamond},
-  {"technic:mv_alloy_furnace_active", diamond},
-  {"technic:tool_workshop", gold},
-  {"technic:grinder", gold},
-  {"technic:grinder_active", gold},
-  {"technic:mv_grinder", diamond},
-  {"technic:mv_grinder_active", diamond},
-  {"technic:extractor", gold},
-  {"technic:extractor_active", gold},
-  {"technic:mv_extractor", diamond},
-  {"technic:mv_extractor_active", diamond},
-  {"technic:compressor", gold},
-  {"technic:compressor_active", gold},
-  {"technic:mv_compressor", diamond},
-  {"technic:mv_compressor_active", diamond},
-  {"technic:cnc", gold},
-  {"technic:cnc_active", gold},
-  {"technic:mv_centrifuge", diamond},
-  {"technic:mv_centrifuge_active", diamond},
+ 
 -- replace pipeworks nodes
 	{"pipeworks:pipe_3_empty", "air"},
 	{"pipeworks:autocrafter", gold},
@@ -93,4 +66,41 @@ local alias = {
 -- change row[1] into row[2] on map
 for _, row in pairs(alias) do
   minetest.register_alias(row[1], row[2])
+end
+
+-- Purge technic nodes (turn them to air) using the conf setting. Default is false.
+local tps_aliases_purge_technic = minetest.setting_getbool("tps_aliases_purge_technic") or false
+if minetest.get_modpath("notice") and mki_notice_enable == true then
+	local technic_alias = {
+	  {"technic:lv_electric_furnace", air},
+	  {"technic:lv_electric_furnace_active", air},
+	  {"technic:mv_electric_furnace", air},
+	  {"technic:mv_electric_furnace_active", air},
+	  {"technic:coal_alloy_furnace", air},
+	  {"technic:coal_alloy_furnace_active", air},
+	  {"technic:alloy_furnace", air},
+	  {"technic:alloy_furnace_active", air},
+	  {"technic:mv_alloy_furnace", air},
+	  {"technic:mv_alloy_furnace_active", air},
+	  {"technic:tool_workshop", air},
+	  {"technic:grinder", air},
+	  {"technic:grinder_active", air},
+	  {"technic:mv_grinder", air},
+	  {"technic:mv_grinder_active", air},
+	  {"technic:extractor", air},
+	  {"technic:extractor_active", air},
+	  {"technic:mv_extractor", air},
+	  {"technic:mv_extractor_active", air},
+	  {"technic:compressor", air},
+	  {"technic:compressor_active", air},
+	  {"technic:mv_compressor", air},
+	  {"technic:mv_compressor_active", air},
+	  {"technic:cnc", air},
+	  {"technic:cnc_active", air},
+	  {"technic:mv_centrifuge", air},
+	  {"technic:mv_centrifuge_active", air},
+	}
+	for _, row in pairs(technic_alias) do
+	  minetest.register_alias(row[1], row[2])
+	end
 end

@@ -100,6 +100,14 @@ if tps_aliases_purge_technic == true then
 	  {"technic:cnc_active", air},
 	  {"technic:mv_centrifuge", air},
 	  {"technic:mv_centrifuge_active", air},
+	  {"technic:lv_cable", air},
+	  {"technic:switching_station", air},
+	  {"technic:lv_battery_box8", air},
+	  {"technic:lv_grinder", air},
+	  {"technic:mv_centrifuge_active", air},
+	  {"technic:mv_centrifuge_active", air},
+
+		
 	}
 	for _, row in pairs(technic_alias) do
 	  minetest.register_alias(row[1], row[2])

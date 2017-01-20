@@ -104,8 +104,8 @@ if tps_aliases_purge_technic == true then
 	  {"technic:switching_station", air},
 	  {"technic:lv_battery_box8", air},
 	  {"technic:lv_grinder", air},
-	  {"technic:mv_centrifuge_active", air},
-	  {"technic:mv_centrifuge_active", air},
+	  {"technic:mv_cable", air},
+	  
 
 		
 	}

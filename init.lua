@@ -7,6 +7,7 @@ local alias = {
   {"path6alt:junglewood", "default:junglewood"},
 -- remove vines
   {"vines:rope", "moreblocks:rope"},
+  {"vines:rope_block","moreblocks:rope"},
   {"vines:side_middle", "air"},
   {"vines:side_end", "air"},
   {"vines:root_middle", "air"},
